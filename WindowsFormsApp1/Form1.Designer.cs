@@ -47,13 +47,6 @@ namespace WindowsFormsApp1
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "a",
-            "b",
-            "c",
-            "1",
-            "2",
-            "3"});
             this.listBox1.Location = new System.Drawing.Point(13, 13);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(176, 381);

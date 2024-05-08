@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
 
         private void textBox_KeyDown_1(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if(e.KeyCode == Keys.Enter && !string.IsNullOrWhiteSpace(textBox.Text) )
             {
                 msgBox.Items.Add(textBox.Text);
                 textBox.Clear();
