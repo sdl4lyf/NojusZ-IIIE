@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            Messaging messages = new Messaging();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,6 +30,12 @@ namespace WindowsFormsApp1
                 msgBox.Items.Add(textBox.Text);
                 textBox.Clear();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddRecipient frm = new AddRecipient(listBox1);
+            frm.ShowDialog();
         }
     }
 }

@@ -11,3 +11,4 @@ C:\Users\Gabijus\Documents\GitHub\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\Windows
 C:\Users\Gabijus\Documents\GitHub\NojusZ-IIIE\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Gabijus\Documents\GitHub\NojusZ-IIIE\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Gabijus\Documents\GitHub\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\Gabijus\Documents\GitHub\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddRecipient.resources
