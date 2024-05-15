@@ -8,14 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApp1
 {
     public partial class AddRecipient : Form
     {
         ListBox recipients;
-        public AddRecipient(ListBox input)
+        Messaging.Data data;
+        public AddRecipient(ListBox input, Messaging.Data input2)
         {
             recipients = input;
+            data = input2;
             InitializeComponent();
         }
 
@@ -24,6 +27,9 @@ namespace WindowsFormsApp1
             if (!string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 recipients.Items.Add(textBox1.Text);
+                data.recipients.Add(new Messaging.Recipient { name = textBox1.Text, messages = new List<Messaging.Message> { } });
+                data.lastRecipient = textBox1.Text;
+                data.names.Add(textBox1.Text, data.counter);
                 Close();
             }
         }

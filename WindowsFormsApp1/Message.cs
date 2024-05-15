@@ -8,40 +8,41 @@ using System.Text.Json;
 
 namespace WindowsFormsApp1
 {
-    internal class Messaging
+    public class Messaging
     {
-        class Message
+        public class Message
         {
             public string text { get; set; }
             public long time { get; set; }
-            public Message(string Text,long Time)
-            {
-                this.text = Text;
-                this.time = Time;
-            }
 
         }
-        class Recipient 
+        public class Recipient 
         {
             public List<Message> messages { get; set; }
             public string name { get; set; }
 
         }
-        class Data
+        public class Data
         {
             public List<Recipient> recipients { get; set; }
+            public string lastRecipient { get; set; }
+            public Dictionary<string, int> names { get; set; }
+            public int counter { get; set; }
         }
+        
+        
 
         public string path { get; set; }
         public Messaging()
         {
             string strExeFilePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
             path = Path.GetDirectoryName(strExeFilePath);
-            Open();
+            Load();
         }
-        public void Open()
+        public void Load()
         {
             
         }
+
     }
 }

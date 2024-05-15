@@ -12,10 +12,14 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        public Messaging.Data data { get; set; }
         public Form1()
         {
             InitializeComponent();
-            Messaging messages = new Messaging();
+            
+            data = new Messaging.Data();
+            data.counter = 0;
+            string currRecipient = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,12 +33,13 @@ namespace WindowsFormsApp1
             {
                 msgBox.Items.Add(textBox.Text);
                 textBox.Clear();
+                //data.names
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AddRecipient frm = new AddRecipient(listBox1);
+            AddRecipient frm = new AddRecipient(listBox1,data);
             frm.ShowDialog();
         }
     }
