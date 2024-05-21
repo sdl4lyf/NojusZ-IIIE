@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -28,20 +29,34 @@ namespace WindowsFormsApp1
             public string lastRecipient { get; set; }
             public Dictionary<string, int> names { get; set; }
             public int counter { get; set; }
+            public bool selected { get; set; }
         }
         
         
 
         public string path { get; set; }
+        public string jsonStr { get; set; }
+        public Data data { get; set; }
         public Messaging()
         {
             string strExeFilePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
             path = Path.GetDirectoryName(strExeFilePath);
-            Load();
+            data = new Data();
+            data.r
+            //Load();
         }
-        public void Load()
+        public Data Load()
         {
+            Data data;
+            jsonStr = File.ReadAllText(path);
+            data = JsonSerializer.Deserialize<Data>(jsonStr);
+            return data;
             
+        }
+        public void Save(Data data)
+        {
+            jsonStr = JsonSerializer.Serialize(data);
+            File.WriteAllText(path, jsonStr);
         }
 
     }

@@ -29,7 +29,8 @@ namespace WindowsFormsApp1
                 recipients.Items.Add(textBox1.Text);
                 data.recipients.Add(new Messaging.Recipient { name = textBox1.Text, messages = new List<Messaging.Message> { } });
                 data.lastRecipient = textBox1.Text;
-                data.names.Add(textBox1.Text, data.counter);
+                data.names.Add(textBox1.Text, data.counter++);
+                data.selected = true;
                 Close();
             }
         }
