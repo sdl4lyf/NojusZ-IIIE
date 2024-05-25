@@ -53,18 +53,20 @@ namespace WindowsFormsApp1
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(13, 11);
+            this.listBox1.Location = new System.Drawing.Point(13, 37);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(176, 381);
+            this.listBox1.Size = new System.Drawing.Size(176, 355);
             this.listBox1.TabIndex = 2;
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
             // msgBox
             // 
             this.msgBox.FormattingEnabled = true;
-            this.msgBox.Location = new System.Drawing.Point(231, 11);
+            this.msgBox.HorizontalScrollbar = true;
+            this.msgBox.Location = new System.Drawing.Point(231, 37);
             this.msgBox.Name = "msgBox";
-            this.msgBox.Size = new System.Drawing.Size(473, 381);
+            this.msgBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.msgBox.Size = new System.Drawing.Size(473, 355);
             this.msgBox.TabIndex = 3;
             // 
             // button1
@@ -128,8 +130,10 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.msgBox);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Messaging";
             this.ResumeLayout(false);
             this.PerformLayout();
 

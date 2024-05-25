@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
                 data.lastRecipient = textBox1.Text;
                 data.names.Add(textBox1.Text, data.counter++);
                 data.selected = true;
+                data.currRecipient = textBox1.Text;
                 Close();
             }
         }
@@ -38,6 +39,11 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddRecipient_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
             data = data2.data;
             data.counter = 0;
             data.selected = false;
-            currRecipient = "";
+            data.currRecipient = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,7 +37,8 @@ namespace WindowsFormsApp1
             if(e.KeyCode == Keys.Enter && !string.IsNullOrWhiteSpace(textBox.Text) )
             {
                 msgBox.Items.Add(textBox.Text);
-                data.recipients[data.names[currRecipient]].messages.Add(new Messaging.Message() {text=textBox.Text,time= DateTimeOffset.UtcNow.ToUnixTimeSeconds() });
+                data.recipients[data.names[data.currRecipient]].messages.Add(new Messaging.Message() {text=textBox.Text,time= DateTimeOffset.UtcNow.ToUnixTimeSeconds() });
+                msgBox.TopIndex = msgBox.Items.Count - 1;
                 textBox.Clear();
             }
         }
@@ -59,18 +60,26 @@ namespace WindowsFormsApp1
 
         private void listBox1_DoubleClick(object sender, EventArgs e)
         {
-            if (currRecipient != listBox1.SelectedItem.ToString())
+            if(listBox1.SelectedItem == null)
             {
-                foreach (Messaging.Message msg in data.recipients[data.names[currRecipient]].messages)
-                {
-                    msgBox.Items.Add(msg.text);
-                }
+                return;
             }
+            msgBox.Items.Clear();
+            data.currRecipient = listBox1.SelectedItem.ToString();
+            foreach (Messaging.Message msg in data.recipients[data.names[data.currRecipient]].messages)
+            {
+                msgBox.Items.Add(msg.text);
+            }
+            if (data.currRecipient != "") { data.selected = true; textBox.Enabled = true; }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            data = data2.Load();
+            foreach(Messaging.Recipient recipient in data.recipients)
+            {
+                listBox1.Items.Add(recipient.name);
+            }
         }
     }
 }

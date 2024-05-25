@@ -82,7 +82,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddRecipient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddRecipient";
+            this.Load += new System.EventHandler(this.AddRecipient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

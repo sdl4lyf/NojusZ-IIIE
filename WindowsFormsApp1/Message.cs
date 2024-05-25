@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
             public Dictionary<string, int> names { get; set; }
             public int counter { get; set; }
             public bool selected { get; set; }
+            public string currRecipient { get; set; }
         }
         
         
@@ -40,10 +41,10 @@ namespace WindowsFormsApp1
         public Messaging()
         {
             string strExeFilePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            path = Path.GetDirectoryName(strExeFilePath);
+            path = Path.GetDirectoryName(strExeFilePath)+"\\data.json";
             data = new Data();
-            data.r
-            //Load();
+            data.recipients = new List<Recipient>();
+            data.names = new Dictionary<string, int>();
         }
         public Data Load()
         {
