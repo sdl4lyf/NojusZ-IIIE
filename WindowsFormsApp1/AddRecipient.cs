@@ -24,10 +24,18 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(textBox1.Text))
+            if (!string.IsNullOrWhiteSpace(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox2.Text))
             {
+                if (data.activatedToChangeInfo)
+                {
+                    recipients.Items.RemoveAt(recipients.SelectedIndex);
+                    recipients.Items.Insert(recipients.SelectedIndex, textBox1.Text);
+
+
+                }
                 recipients.Items.Add(textBox1.Text);
-                data.recipients.Add(new Messaging.Recipient { name = textBox1.Text, messages = new List<Messaging.Message> { } });
+                char[] separator = new char[] { ':' };  
+                data.recipients.Add(new Messaging.Recipient { name = textBox1.Text, messages = new List<Messaging.Message> { },ip = textBox2.Text.Split(separator)[0],port = Convert.ToInt32(textBox2.Text.Split(separator)[1]) });
                 data.lastRecipient = textBox1.Text;
                 data.names.Add(textBox1.Text, data.counter++);
                 data.selected = true;

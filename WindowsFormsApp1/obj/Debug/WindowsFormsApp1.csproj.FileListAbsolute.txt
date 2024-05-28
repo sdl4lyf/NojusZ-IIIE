@@ -63,3 +63,4 @@ D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCo
 D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Gabijus\Documents\GitHub\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.NickChange.resources

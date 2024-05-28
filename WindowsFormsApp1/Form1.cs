@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace WindowsFormsApp1
 {
@@ -25,6 +26,11 @@ namespace WindowsFormsApp1
             data.counter = 0;
             data.selected = false;
             data.currRecipient = "";
+            label1.Text = data.currName +':'+ local_ip();
+        }
+        public string local_ip()
+        {
+            return Dns.GetHostAddresses(Dns.GetHostName())[1].ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,6 +56,8 @@ namespace WindowsFormsApp1
             if (data.selected)
             {
                 textBox.Enabled = true;
+                var curr = data.recipients[data.names[data.currRecipient]];
+                label2.Text = curr.name + ":" + curr.ip + ":" + curr.port.ToString();
             }
         }
 
@@ -64,6 +72,8 @@ namespace WindowsFormsApp1
             {
                 return;
             }
+            var curr = data.recipients[data.names[data.currRecipient]];
+            label2.Text = curr.name+":"+curr.ip+":"+curr.port.ToString();
             msgBox.Items.Clear();
             data.currRecipient = listBox1.SelectedItem.ToString();
             foreach (Messaging.Message msg in data.recipients[data.names[data.currRecipient]].messages)
@@ -80,6 +90,26 @@ namespace WindowsFormsApp1
             {
                 listBox1.Items.Add(recipient.name);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new NickChange(data).ShowDialog();
+            label1.Text = data.currName + ':' + local_ip();
+        }
+
+        private void listBox1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            listBox1.SelectedIndex = listBox1.IndexFromPoint(e.Location);
+            if (listBox1.SelectedIndex != -1)
+            {
+               contextMenuStrip1.Show();
+            }
+        }
+
+        private void changeInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,6 +21,8 @@ namespace WindowsFormsApp1
         {
             public List<Message> messages { get; set; }
             public string name { get; set; }
+            public string ip { get; set; }
+            public int port { get; set; }
 
         }
         public class Data
@@ -31,6 +33,8 @@ namespace WindowsFormsApp1
             public int counter { get; set; }
             public bool selected { get; set; }
             public string currRecipient { get; set; }
+            public string currName { get; set; } = "(YourNickname)";
+            public bool activatedToChangeInfo { get; set; } = false;
         }
         
         
