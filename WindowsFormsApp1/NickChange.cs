@@ -24,6 +24,7 @@ namespace WindowsFormsApp1
             if(!string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 data.currName = textBox1.Text;
+                data.currPort = Convert.ToInt32(textBox2.Text);
                 Close();
             }
 

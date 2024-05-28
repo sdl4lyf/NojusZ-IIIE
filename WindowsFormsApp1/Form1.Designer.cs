@@ -64,8 +64,10 @@ namespace WindowsFormsApp1
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(176, 355);
             this.listBox1.TabIndex = 2;
+            this.listBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseClick);
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
+            this.listBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseUp);
             // 
             // msgBox
             // 
@@ -150,12 +152,12 @@ namespace WindowsFormsApp1
             this.changeInfoToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(140, 48);
             // 
             // changeInfoToolStripMenuItem
             // 
             this.changeInfoToolStripMenuItem.Name = "changeInfoToolStripMenuItem";
-            this.changeInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.changeInfoToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.changeInfoToolStripMenuItem.Text = "Change Info";
             this.changeInfoToolStripMenuItem.Click += new System.EventHandler(this.changeInfoToolStripMenuItem_Click);
             // 
@@ -169,7 +171,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 436);
+            this.ClientSize = new System.Drawing.Size(716, 437);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);

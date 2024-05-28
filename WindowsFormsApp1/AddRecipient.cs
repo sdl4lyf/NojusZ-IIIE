@@ -15,10 +15,12 @@ namespace WindowsFormsApp1
     {
         ListBox recipients;
         Messaging.Data data;
+        char[] separator;
         public AddRecipient(ListBox input, Messaging.Data input2)
         {
             recipients = input;
             data = input2;
+            separator = new char[] { ':' };
             InitializeComponent();
         }
 
@@ -28,13 +30,20 @@ namespace WindowsFormsApp1
             {
                 if (data.activatedToChangeInfo)
                 {
-                    recipients.Items.RemoveAt(recipients.SelectedIndex);
-                    recipients.Items.Insert(recipients.SelectedIndex, textBox1.Text);
-
-
+                    int ind = recipients.SelectedIndex;
+                    int temp = data.names[recipients.Items[ind].ToString()];
+                    data.names.Remove(recipients.Items[ind].ToString());
+                    data.names.Add(textBox1.Text, temp);
+                    recipients.Items.RemoveAt(ind);
+                    recipients.Items.Insert(ind, textBox1.Text);
+                    data.recipients[ind].name = textBox1.Text;
+                    data.recipients[ind].ip = textBox2.Text.Split(separator)[0];
+                    data.recipients[ind].port = Convert.ToInt32(textBox2.Text.Split(separator)[1]);
+                    Close();
+                    return;
                 }
                 recipients.Items.Add(textBox1.Text);
-                char[] separator = new char[] { ':' };  
+                 
                 data.recipients.Add(new Messaging.Recipient { name = textBox1.Text, messages = new List<Messaging.Message> { },ip = textBox2.Text.Split(separator)[0],port = Convert.ToInt32(textBox2.Text.Split(separator)[1]) });
                 data.lastRecipient = textBox1.Text;
                 data.names.Add(textBox1.Text, data.counter++);

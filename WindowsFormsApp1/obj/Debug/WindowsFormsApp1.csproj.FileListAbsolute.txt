@@ -64,3 +64,6 @@ D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyCo
 D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Gabijus\Documents\GitHub\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.NickChange.resources
+D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.NickChange.resources
+D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\bin\Debug\SimpleTCP.dll
+D:\CODE\gh\NojusZ-IIIE\WindowsFormsApp1\bin\Debug\SuperSimpleTcp.dll

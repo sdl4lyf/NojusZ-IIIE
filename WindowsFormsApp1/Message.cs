@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
         public class Message
         {
             public string text { get; set; }
-            public long time { get; set; }
+            public string sender { get; set; }
 
         }
         public class Recipient 
@@ -33,7 +33,8 @@ namespace WindowsFormsApp1
             public int counter { get; set; }
             public bool selected { get; set; }
             public string currRecipient { get; set; }
-            public string currName { get; set; } = "(YourNickname)";
+            public string currName { get; set; } = "User";
+            public int currPort { get; set; } = 30001;
             public bool activatedToChangeInfo { get; set; } = false;
         }
         
