@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
             server.Start();
         }
         private void DataReceived(object sender, DataReceivedEventArgs e)
-        { 
+        {
             foreach (var x in data.recipients)
             {
                 char[] sep = { ':' };
@@ -31,7 +31,8 @@ namespace WindowsFormsApp1
                 {
                     var msg = new Messaging.Message { text = Encoding.UTF8.GetString(e.Data.Array, 0, e.Data.Count), sender = x.name + "(" + x.ip + ":" + x.port + ")" };
                     x.messages.Add(msg);
-                    list.Items.Add(x.name+"("+x.ip+":"+x.port+")" + ": "+ msg.text);
+
+                    if (e.IpPort.Split(sep)[0] == data.recipients[data.names[data.currRecipient]].ip) list.Items.Add(x.name + "(" + x.ip + ":" + x.port + ")" + ": " + msg.text);
                     list.TopIndex = list.Items.Count - 1;
                 }
             }

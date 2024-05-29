@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\addrecipient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|c:\\users\\gabijus\\documents\\github\\nojusz-iiie\\windowsformsapp1\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|solutionrelative:server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|c:\\users\\gabijus\\documents\\github\\nojusz-iiie\\windowsformsapp1\\addrecipient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|solutionrelative:addrecipient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|solutionrelative:addrecipient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|c:\\users\\gabijus\\documents\\github\\nojusz-iiie\\windowsformsapp1\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|solutionrelative:message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,11 +27,11 @@
       "RelativeMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|c:\\users\\gabijus\\documents\\github\\nojusz-iiie\\windowsformsapp1\\nickchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\nickchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|solutionrelative:nickchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|c:\\users\\gabijus\\documents\\github\\nojusz-iiie\\windowsformsapp1\\nickchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\nickchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{156424CC-1D04-4AA1-8CDC-99DCB4D845E0}|WindowsFormsApp1.csproj|solutionrelative:nickchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 318,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\Server.cs",
+              "RelativeDocumentMoniker": "Server.cs",
+              "ToolTip": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\Server.cs",
+              "RelativeToolTip": "Server.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:14:47.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "NickChange.cs",
               "DocumentMoniker": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\NickChange.cs",
               "RelativeDocumentMoniker": "NickChange.cs",
@@ -50,24 +67,22 @@
               "RelativeToolTip": "NickChange.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAYwB0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T09:23:47.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T09:23:47.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "NickChange.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\NickChange.cs",
               "RelativeDocumentMoniker": "NickChange.cs",
               "ToolTip": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\NickChange.cs [Design]",
               "RelativeToolTip": "NickChange.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T08:48:50.615Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-28T08:48:50.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AddRecipient.cs",
               "DocumentMoniker": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\AddRecipient.cs",
               "RelativeDocumentMoniker": "AddRecipient.cs",
@@ -80,31 +95,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AddRecipient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\AddRecipient.cs",
               "RelativeDocumentMoniker": "AddRecipient.cs",
               "ToolTip": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\AddRecipient.cs [Design]",
               "RelativeToolTip": "AddRecipient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T08:14:15.583Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-14T08:14:15.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:20:24.198Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T08:20:24.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -112,12 +125,11 @@
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AQIAAFoAAAAAAAAAAAAAwG8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T10:06:35.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T10:06:35.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\Gabijus\\Documents\\GitHub\\NojusZ-IIIE\\WindowsFormsApp1\\Message.cs",
               "RelativeDocumentMoniker": "Message.cs",
@@ -125,8 +137,7 @@
               "RelativeToolTip": "Message.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAA8wCAAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T07:09:51.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T07:09:51.377Z"
             }
           ]
         },
